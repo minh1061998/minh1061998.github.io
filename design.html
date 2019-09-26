@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="height-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: gray;    
+        }
+
+        .justify-end{
+            justify-content: flex-end;
+        }
+        .element{
+            background-color: green;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        .grow-1{
+            flex-grow: 1;
+        }
+        .grow-2{
+            flex-grow:2;
+        }
+        .grow-3{
+            flex-grow:3;
+        }
+        .height-100 {
+            height: 100%;
+        }
+        .flex-column{
+            flex-direction:column;
+        }
+        .width-100{
+            width: 100%;
+        }
+        .msg{
+            border-radius: 7px;
+            padding: 2px 5px;
+        }
+        .msg-host{
+            background-color:#0084ff;
+            color:black;
+        }
+        .msg-guest{
+            background-color: #f1f0f0;
+            color:black;
+        }
+        .vertical-space{
+            height: 50px;
+        }
+        .host-space{
+            height: 10px;
+        }
+
+    </style>
+</head>
+<body class="height-100">
+       
+        <div class="flex-container height-100">
+            
+            <div class="element grow-1">
+            </div>            
+            <div class="flex-container flex-column grow-3">
+                <div class="element">
+                    <h2>Title</h2>
+                </div>
+                <div class="flex-container element grow-1">
+                    <div class="element grow-3 flex-container flex-column">
+    
+                        <div class="element grow-1">
+                            <div class="flex-container">
+                                <span class="msg msg-guest">Hello, Chào anh!</span>
+                            </div>
+                            <div class="vertical-space"></div>   
+                            <div class="flex-container justify-end">
+                                <span class="msg msg-host">Hello, Chào anh em nhớ!</span>
+                            </div>
+                            <div class="host-space"></div>
+                            <div class="flex-container justify-end">
+                                    <span class="msg msg-host">Hello, Chào anh em nhớ!</span>
+                            </div>
+                                <div class="host-space"></div>
+                        </div>
+                        <div class="element">
+                            <form action="">
+                                <div class="flex-container">
+        
+                                    <div class="grow-1">
+                                        <input type="text" class="width-100">
+                                    </div>
+                                    <div>
+                                        <button>Send</button>
+                                    </div>                        
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <div class="element grow-1">
+                    <div>minh1061998@gmail.com</div>
+                    <div>example@example.com</div>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="Type email here">
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+           
+        </div>
+        
+</body>
+</html>
